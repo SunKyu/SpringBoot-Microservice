@@ -6,7 +6,7 @@ import org.springframework.web.bind.annotation.PathVariable
 interface ProductService {
     @GetMapping(
         "/product/{productId}",
-        produces = arrayOf("appliction/json")
+        produces = arrayOf("application/json")
     )
     fun getProduct(@PathVariable productId: Int): Product
 }
